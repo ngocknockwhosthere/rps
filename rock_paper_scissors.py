@@ -7,6 +7,27 @@ def main():
     possible_actions = ["rock", "paper", "scissors"]
     computer_action = random.choice(possible_actions)
     print("computer chose: " + computer_action)
+    if user_action == "rock": 
+        if computer_action == "paper":
+            print("Computer wins")
+        elif computer_action == " scisscors":
+            print("User wins")
+        else:
+            print("Tie")
+    elif user_action == "paper": 
+        if computer_action == "paper":
+            print("Tie")
+        elif computer_action == " scisscors":
+            print("Computer wins")
+        else:
+            print("User wins")
+    else:
+        if computer_action == "paper":
+            print("User wins")
+        elif computer_action == " scisscors":
+            print("Tie")
+        else:
+            print("Computer wins")
     return 0
 
 
